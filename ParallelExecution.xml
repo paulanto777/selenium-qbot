@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Paraphraser parallel execution">
+    <listeners>
+        <listener class-name="main.java.com.quill.common.Listeners" />
+    </listeners>
+    <test name="Paraphraser" parallel="classes" thread-count="4">
+        <classes>
+            <class name="test.java.com.quill.tests.paraphraser.freemiumUser.PPHR_FreeUser" />
+            <class name="test.java.com.quill.tests.paraphraser.guestUser.GuestUser" />
+            <class name="test.java.com.quill.tests.paraphraser.premiumUser.paraphraserPremium" />
+            <class name="test.java.com.quill.tests.paraphraser.premiumUser.PremiumPphrRegression" />
+        </classes>
+    </test>
+</suite>

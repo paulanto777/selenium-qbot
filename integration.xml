@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Integration Suite">
+    <listeners>
+        <listener class-name="main.java.com.quill.common.Listeners"/>
+    </listeners>
+    <test name="Integration test">
+        <classes>
+            <class name="test.java.com.quill.tests.coWriter.freemiumUser.CwFreePphrIntegrationTest"/>
+            <class name="test.java.com.quill.tests.coWriter.freemiumUser.CwFreeSmzrIntegrationTest"/>
+            <class name="test.java.com.quill.tests.coWriter.premiumUser.CwIntegrationTest"/>
+        </classes>
+    </test>
+</suite>

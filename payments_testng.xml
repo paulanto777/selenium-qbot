@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Payments BAT Suite">
+    <listeners>
+        <listener class-name="main.java.com.quill.common.Listeners"/>
+    </listeners>
+    <test name="Payments">
+        <classes>
+          <!--  <class name="test.java.com.quill.tests.payments.logged_In_User.Premium"/>-->
+           <!-- <class name="test.java.com.quill.tests.payments.logged_In_User.Paypal"/>
+            <class name="test.java.com.quill.tests.payments.logged_In_User.Stripe"/>-->
+            <class name="test.java.com.quill.tests.payments.logged_In_User.Autopremium"/>
+          <!--  <class name="test.java.com.quill.tests.payments.logged_In_User.Freemium"/>-->
+            <class name="test.java.com.quill.tests.payments.not_logged_In_User.GetPremium"/>
+            <class name="test.java.com.quill.tests.payments.not_logged_In_User.Reset"/>
+        </classes>
+    </test>
+</suite> <!-- Suite -->
